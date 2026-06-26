@@ -1,0 +1,39 @@
+crawler:
+  cities:
+    - name: Yaoundé
+      lat: 3.8480
+      lng: 11.5021
+      radius-meters: 15000
+    - name: Douala
+      lat: 4.0511
+      lng: 9.7679
+      radius-meters: 15000
+    - name: Bafoussam
+      lat: 5.4737
+      lng: 10.4179
+      radius-meters: 10000
+  osm-types:
+    - restaurant
+    - pharmacy
+    - supermarket
+    - bank
+    - hospital
+    - shop
+  schedule:
+    cron: "0 0 2 * * *"
+
+spring:
+  application:
+    name: crawler-service
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+kafka:
+  topics:
+    listings: listings.raw
+
+server:
+  port: 8086

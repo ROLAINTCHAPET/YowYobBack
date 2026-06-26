@@ -1,0 +1,201 @@
+Attaching to d3bb3d91d2e1_search-final
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.reactor.BaseIOReactor.readable(BaseIOReactor.java:162) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:337) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:315) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:276) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:26:51.773Z  INFO 1 --- [search-service] [or-http-epoll-2] c.yowyob.search.service.SearchService    : Searching by proximity: query=restaurant, city=null, radiusKm=1.0
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:26:51.803Z  INFO 1 --- [search-service] [or-http-epoll-2] c.yowyob.search.service.SearchService    : Searching by proximity: query=restaurants prÃ¨s de chez moi, city=null, radiusKm=10.0
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:27:01.409Z  INFO 1 --- [search-service] [ntContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:27:01.837Z  INFO 1 --- [search-service] [ntContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+[36md3bb3d91d2e1_search-final |[0m 
+[36md3bb3d91d2e1_search-final |[0m   .   ____          _            __ _ _
+[36md3bb3d91d2e1_search-final |[0m  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+[36md3bb3d91d2e1_search-final |[0m ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+[36md3bb3d91d2e1_search-final |[0m  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+[36md3bb3d91d2e1_search-final |[0m   '  |____| .__|_| |_|_| |_\__, | / / / /
+[36md3bb3d91d2e1_search-final |[0m  =========|_|==============|___/=/_/_/_/
+[36md3bb3d91d2e1_search-final |[0m  :: Spring Boot ::                (v3.2.0)
+[36md3bb3d91d2e1_search-final |[0m 
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:27:05.522Z  INFO 1 --- [search-service] [           main] c.y.search.SearchServiceApplication      : Starting SearchServiceApplication v1.0.0 using Java 17.0.18 with PID 1 (/app/app.jar started by root in /app)
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:27:05.526Z  INFO 1 --- [search-service] [           main] c.y.search.SearchServiceApplication      : The following 1 profile is active: "docker"
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:27:06.781Z  INFO 1 --- [search-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:27:06.926Z  INFO 1 --- [search-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140 ms. Found 0 Elasticsearch repository interfaces.
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:27:06.933Z  INFO 1 --- [search-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:27:06.950Z  INFO 1 --- [search-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 2 Reactive Elasticsearch repository interfaces.
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:27:09.202Z  INFO 1 --- [search-service] [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8082
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:27:09.206Z  INFO 1 --- [search-service] [           main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [rabbitmq:5672]
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:27:09.254Z  INFO 1 --- [search-service] [           main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#370225c7:0/SimpleConnection@25dcf1b6 [delegate=amqp://guest@172.19.0.5:5672/, localPort=55178]
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:27:09.318Z  INFO 1 --- [search-service] [           main] c.y.search.SearchServiceApplication      : Started SearchServiceApplication in 4.442 seconds (process running for 5.054)
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:27:29.844Z  INFO 1 --- [search-service] [or-http-epoll-2] c.yowyob.search.service.SearchService    : Searching by proximity: query=restaurant, city=null, radiusKm=10.0
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:27:29.938Z  INFO 1 --- [search-service] [or-http-epoll-2] c.yowyob.search.service.SearchService    : Searching: query=restaurant, type=all, city=null, userId=null, ip=172.19.0.1
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:27:30.198Z ERROR 1 --- [search-service] [/O dispatcher 1] a.w.r.e.AbstractErrorWebExceptionHandler : [a4dcfa01-2]  500 Server Error for HTTP GET "/api/search?q=restaurant&type=all"
+[36md3bb3d91d2e1_search-final |[0m 
+[36md3bb3d91d2e1_search-final |[0m org.springframework.data.elasticsearch.UncategorizedElasticsearchException: [es/search] failed: [search_phase_execution_exception] all shards failed
+[36md3bb3d91d2e1_search-final |[0m 	at org.springframework.data.elasticsearch.client.elc.ElasticsearchExceptionTranslator.translateExceptionIfPossible(ElasticsearchExceptionTranslator.java:105) ~[spring-data-elasticsearch-5.2.0.jar!/:5.2.0]
+[36md3bb3d91d2e1_search-final |[0m 	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+[36md3bb3d91d2e1_search-final |[0m Error has been observed at the following site(s):
+[36md3bb3d91d2e1_search-final |[0m 	*__checkpoint ⇢ Handler com.yowyob.search.controller.SearchController#search(String, String, String, String, String, String) [DispatcherHandler]
+[36md3bb3d91d2e1_search-final |[0m 	*__checkpoint ⇢ HTTP GET "/api/search?q=restaurant&type=all" [ExceptionHandlingWebHandler]
+[36md3bb3d91d2e1_search-final |[0m Original Stack Trace:
+[36md3bb3d91d2e1_search-final |[0m 		at org.springframework.data.elasticsearch.client.elc.ElasticsearchExceptionTranslator.translateExceptionIfPossible(ElasticsearchExceptionTranslator.java:105) ~[spring-data-elasticsearch-5.2.0.jar!/:5.2.0]
+[36md3bb3d91d2e1_search-final |[0m 		at org.springframework.data.elasticsearch.client.elc.ReactiveElasticsearchTemplate.translateException(ReactiveElasticsearchTemplate.java:651) ~[spring-data-elasticsearch-5.2.0.jar!/:5.2.0]
+[36md3bb3d91d2e1_search-final |[0m 		at reactor.core.publisher.Flux.lambda$onErrorMap$27(Flux.java:7204) ~[reactor-core-3.6.0.jar!/:3.6.0]
+[36md3bb3d91d2e1_search-final |[0m 		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94) ~[reactor-core-3.6.0.jar!/:3.6.0]
+[36md3bb3d91d2e1_search-final |[0m 		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:118) ~[reactor-core-3.6.0.jar!/:3.6.0]
+[36md3bb3d91d2e1_search-final |[0m 		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67) ~[reactor-core-3.6.0.jar!/:3.6.0]
+[36md3bb3d91d2e1_search-final |[0m 		at java.base/java.util.concurrent.CompletableFuture.uniHandle(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 		at java.base/java.util.concurrent.CompletableFuture.postComplete(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 		at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 		at co.elastic.clients.transport.ElasticsearchTransportBase.lambda$performRequestAsync$0(ElasticsearchTransportBase.java:210) ~[elasticsearch-java-8.10.4.jar!/:na]
+[36md3bb3d91d2e1_search-final |[0m 		at java.base/java.util.concurrent.CompletableFuture.uniHandle(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 		at java.base/java.util.concurrent.CompletableFuture.postComplete(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 		at java.base/java.util.concurrent.CompletableFuture.complete(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 		at co.elastic.clients.transport.rest_client.RestClientHttpClient$1.onSuccess(RestClientHttpClient.java:115) ~[elasticsearch-java-8.10.4.jar!/:na]
+[36md3bb3d91d2e1_search-final |[0m 		at org.elasticsearch.client.RestClient$FailureTrackingResponseListener.onSuccess(RestClient.java:676) ~[elasticsearch-rest-client-8.10.4.jar!/:8.10.4]
+[36md3bb3d91d2e1_search-final |[0m 		at org.elasticsearch.client.RestClient$1.completed(RestClient.java:399) ~[elasticsearch-rest-client-8.10.4.jar!/:8.10.4]
+[36md3bb3d91d2e1_search-final |[0m 		at org.elasticsearch.client.RestClient$1.completed(RestClient.java:393) ~[elasticsearch-rest-client-8.10.4.jar!/:8.10.4]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.concurrent.BasicFuture.completed(BasicFuture.java:122) ~[httpcore-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.responseCompleted(DefaultClientExchangeHandlerImpl.java:182) ~[httpasyncclient-4.1.5.jar!/:4.1.5]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.nio.protocol.HttpAsyncRequestExecutor.processResponse(HttpAsyncRequestExecutor.java:448) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.nio.protocol.HttpAsyncRequestExecutor.inputReady(HttpAsyncRequestExecutor.java:338) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.impl.nio.DefaultNHttpClientConnection.consumeInput(DefaultNHttpClientConnection.java:265) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:87) ~[httpasyncclient-4.1.5.jar!/:4.1.5]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:40) ~[httpasyncclient-4.1.5.jar!/:4.1.5]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:114) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.impl.nio.reactor.BaseIOReactor.readable(BaseIOReactor.java:162) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:337) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:315) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:276) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 		at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m Caused by: co.elastic.clients.elasticsearch._types.ElasticsearchException: [es/search] failed: [search_phase_execution_exception] all shards failed
+[36md3bb3d91d2e1_search-final |[0m 	at co.elastic.clients.transport.ElasticsearchTransportBase.getApiResponse(ElasticsearchTransportBase.java:338) ~[elasticsearch-java-8.10.4.jar!/:na]
+[36md3bb3d91d2e1_search-final |[0m 	at co.elastic.clients.transport.ElasticsearchTransportBase.lambda$performRequestAsync$0(ElasticsearchTransportBase.java:204) ~[elasticsearch-java-8.10.4.jar!/:na]
+[36md3bb3d91d2e1_search-final |[0m 	at java.base/java.util.concurrent.CompletableFuture.uniHandle(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 	at java.base/java.util.concurrent.CompletableFuture.postComplete(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 	at java.base/java.util.concurrent.CompletableFuture.complete(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 	at co.elastic.clients.transport.rest_client.RestClientHttpClient$1.onSuccess(RestClientHttpClient.java:115) ~[elasticsearch-java-8.10.4.jar!/:na]
+[36md3bb3d91d2e1_search-final |[0m 	at org.elasticsearch.client.RestClient$FailureTrackingResponseListener.onSuccess(RestClient.java:676) ~[elasticsearch-rest-client-8.10.4.jar!/:8.10.4]
+[36md3bb3d91d2e1_search-final |[0m 	at org.elasticsearch.client.RestClient$1.completed(RestClient.java:399) ~[elasticsearch-rest-client-8.10.4.jar!/:8.10.4]
+[36md3bb3d91d2e1_search-final |[0m 	at org.elasticsearch.client.RestClient$1.completed(RestClient.java:393) ~[elasticsearch-rest-client-8.10.4.jar!/:8.10.4]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.concurrent.BasicFuture.completed(BasicFuture.java:122) ~[httpcore-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.responseCompleted(DefaultClientExchangeHandlerImpl.java:182) ~[httpasyncclient-4.1.5.jar!/:4.1.5]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.nio.protocol.HttpAsyncRequestExecutor.processResponse(HttpAsyncRequestExecutor.java:448) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.nio.protocol.HttpAsyncRequestExecutor.inputReady(HttpAsyncRequestExecutor.java:338) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.DefaultNHttpClientConnection.consumeInput(DefaultNHttpClientConnection.java:265) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:87) ~[httpasyncclient-4.1.5.jar!/:4.1.5]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:40) ~[httpasyncclient-4.1.5.jar!/:4.1.5]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:114) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.reactor.BaseIOReactor.readable(BaseIOReactor.java:162) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:337) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:315) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:276) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:27:30.239Z  INFO 1 --- [search-service] [or-http-epoll-2] c.yowyob.search.service.SearchService    : Searching by proximity: query=restaurant, city=null, radiusKm=1.0
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:27:30.261Z  INFO 1 --- [search-service] [or-http-epoll-2] c.yowyob.search.service.SearchService    : Searching by proximity: query=restaurants prÃ¨s de chez moi, city=null, radiusKm=10.0
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:29:17.035Z  INFO 1 --- [search-service] [ntContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:29:17.336Z  INFO 1 --- [search-service] [ntContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+[36md3bb3d91d2e1_search-final |[0m 
+[36md3bb3d91d2e1_search-final |[0m   .   ____          _            __ _ _
+[36md3bb3d91d2e1_search-final |[0m  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+[36md3bb3d91d2e1_search-final |[0m ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+[36md3bb3d91d2e1_search-final |[0m  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+[36md3bb3d91d2e1_search-final |[0m   '  |____| .__|_| |_|_| |_\__, | / / / /
+[36md3bb3d91d2e1_search-final |[0m  =========|_|==============|___/=/_/_/_/
+[36md3bb3d91d2e1_search-final |[0m  :: Spring Boot ::                (v3.2.0)
+[36md3bb3d91d2e1_search-final |[0m 
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:29:21.049Z  INFO 1 --- [search-service] [           main] c.y.search.SearchServiceApplication      : Starting SearchServiceApplication v1.0.0 using Java 17.0.18 with PID 1 (/app/app.jar started by root in /app)
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:29:21.054Z  INFO 1 --- [search-service] [           main] c.y.search.SearchServiceApplication      : The following 1 profile is active: "docker"
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:29:22.438Z  INFO 1 --- [search-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:29:22.604Z  INFO 1 --- [search-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 160 ms. Found 0 Elasticsearch repository interfaces.
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:29:22.611Z  INFO 1 --- [search-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:29:22.629Z  INFO 1 --- [search-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 2 Reactive Elasticsearch repository interfaces.
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:29:24.705Z  INFO 1 --- [search-service] [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8082
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:29:24.710Z  INFO 1 --- [search-service] [           main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [rabbitmq:5672]
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:29:24.762Z  INFO 1 --- [search-service] [           main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#5d6b42cf:0/SimpleConnection@4213bc3e [delegate=amqp://guest@172.19.0.5:5672/, localPort=51446]
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:29:24.818Z  INFO 1 --- [search-service] [           main] c.y.search.SearchServiceApplication      : Started SearchServiceApplication in 4.483 seconds (process running for 5.118)
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:29:45.253Z  INFO 1 --- [search-service] [or-http-epoll-2] c.yowyob.search.service.SearchService    : Searching by proximity: query=restaurant, city=null, radiusKm=10.0
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:29:45.350Z  INFO 1 --- [search-service] [or-http-epoll-2] c.yowyob.search.service.SearchService    : Searching: query=restaurant, type=all, city=null, userId=null, ip=172.19.0.1
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:29:45.577Z ERROR 1 --- [search-service] [/O dispatcher 1] a.w.r.e.AbstractErrorWebExceptionHandler : [3788aabf-2]  500 Server Error for HTTP GET "/api/search?q=restaurant&type=all"
+[36md3bb3d91d2e1_search-final |[0m 
+[36md3bb3d91d2e1_search-final |[0m org.springframework.data.elasticsearch.UncategorizedElasticsearchException: [es/search] failed: [search_phase_execution_exception] all shards failed
+[36md3bb3d91d2e1_search-final |[0m 	at org.springframework.data.elasticsearch.client.elc.ElasticsearchExceptionTranslator.translateExceptionIfPossible(ElasticsearchExceptionTranslator.java:105) ~[spring-data-elasticsearch-5.2.0.jar!/:5.2.0]
+[36md3bb3d91d2e1_search-final |[0m 	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+[36md3bb3d91d2e1_search-final |[0m Error has been observed at the following site(s):
+[36md3bb3d91d2e1_search-final |[0m 	*__checkpoint ⇢ Handler com.yowyob.search.controller.SearchController#search(String, String, String, String, String, String) [DispatcherHandler]
+[36md3bb3d91d2e1_search-final |[0m 	*__checkpoint ⇢ HTTP GET "/api/search?q=restaurant&type=all" [ExceptionHandlingWebHandler]
+[36md3bb3d91d2e1_search-final |[0m Original Stack Trace:
+[36md3bb3d91d2e1_search-final |[0m 		at org.springframework.data.elasticsearch.client.elc.ElasticsearchExceptionTranslator.translateExceptionIfPossible(ElasticsearchExceptionTranslator.java:105) ~[spring-data-elasticsearch-5.2.0.jar!/:5.2.0]
+[36md3bb3d91d2e1_search-final |[0m 		at org.springframework.data.elasticsearch.client.elc.ReactiveElasticsearchTemplate.translateException(ReactiveElasticsearchTemplate.java:651) ~[spring-data-elasticsearch-5.2.0.jar!/:5.2.0]
+[36md3bb3d91d2e1_search-final |[0m 		at reactor.core.publisher.Flux.lambda$onErrorMap$27(Flux.java:7204) ~[reactor-core-3.6.0.jar!/:3.6.0]
+[36md3bb3d91d2e1_search-final |[0m 		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94) ~[reactor-core-3.6.0.jar!/:3.6.0]
+[36md3bb3d91d2e1_search-final |[0m 		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:118) ~[reactor-core-3.6.0.jar!/:3.6.0]
+[36md3bb3d91d2e1_search-final |[0m 		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67) ~[reactor-core-3.6.0.jar!/:3.6.0]
+[36md3bb3d91d2e1_search-final |[0m 		at java.base/java.util.concurrent.CompletableFuture.uniHandle(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 		at java.base/java.util.concurrent.CompletableFuture.postComplete(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 		at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 		at co.elastic.clients.transport.ElasticsearchTransportBase.lambda$performRequestAsync$0(ElasticsearchTransportBase.java:210) ~[elasticsearch-java-8.10.4.jar!/:na]
+[36md3bb3d91d2e1_search-final |[0m 		at java.base/java.util.concurrent.CompletableFuture.uniHandle(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 		at java.base/java.util.concurrent.CompletableFuture.postComplete(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 		at java.base/java.util.concurrent.CompletableFuture.complete(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 		at co.elastic.clients.transport.rest_client.RestClientHttpClient$1.onSuccess(RestClientHttpClient.java:115) ~[elasticsearch-java-8.10.4.jar!/:na]
+[36md3bb3d91d2e1_search-final |[0m 		at org.elasticsearch.client.RestClient$FailureTrackingResponseListener.onSuccess(RestClient.java:676) ~[elasticsearch-rest-client-8.10.4.jar!/:8.10.4]
+[36md3bb3d91d2e1_search-final |[0m 		at org.elasticsearch.client.RestClient$1.completed(RestClient.java:399) ~[elasticsearch-rest-client-8.10.4.jar!/:8.10.4]
+[36md3bb3d91d2e1_search-final |[0m 		at org.elasticsearch.client.RestClient$1.completed(RestClient.java:393) ~[elasticsearch-rest-client-8.10.4.jar!/:8.10.4]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.concurrent.BasicFuture.completed(BasicFuture.java:122) ~[httpcore-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.responseCompleted(DefaultClientExchangeHandlerImpl.java:182) ~[httpasyncclient-4.1.5.jar!/:4.1.5]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.nio.protocol.HttpAsyncRequestExecutor.processResponse(HttpAsyncRequestExecutor.java:448) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.nio.protocol.HttpAsyncRequestExecutor.inputReady(HttpAsyncRequestExecutor.java:338) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.impl.nio.DefaultNHttpClientConnection.consumeInput(DefaultNHttpClientConnection.java:265) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:87) ~[httpasyncclient-4.1.5.jar!/:4.1.5]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:40) ~[httpasyncclient-4.1.5.jar!/:4.1.5]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:114) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.impl.nio.reactor.BaseIOReactor.readable(BaseIOReactor.java:162) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:337) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:315) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:276) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 		at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 		at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m Caused by: co.elastic.clients.elasticsearch._types.ElasticsearchException: [es/search] failed: [search_phase_execution_exception] all shards failed
+[36md3bb3d91d2e1_search-final |[0m 	at co.elastic.clients.transport.ElasticsearchTransportBase.getApiResponse(ElasticsearchTransportBase.java:338) ~[elasticsearch-java-8.10.4.jar!/:na]
+[36md3bb3d91d2e1_search-final |[0m 	at co.elastic.clients.transport.ElasticsearchTransportBase.lambda$performRequestAsync$0(ElasticsearchTransportBase.java:204) ~[elasticsearch-java-8.10.4.jar!/:na]
+[36md3bb3d91d2e1_search-final |[0m 	at java.base/java.util.concurrent.CompletableFuture.uniHandle(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 	at java.base/java.util.concurrent.CompletableFuture.postComplete(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 	at java.base/java.util.concurrent.CompletableFuture.complete(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 	at co.elastic.clients.transport.rest_client.RestClientHttpClient$1.onSuccess(RestClientHttpClient.java:115) ~[elasticsearch-java-8.10.4.jar!/:na]
+[36md3bb3d91d2e1_search-final |[0m 	at org.elasticsearch.client.RestClient$FailureTrackingResponseListener.onSuccess(RestClient.java:676) ~[elasticsearch-rest-client-8.10.4.jar!/:8.10.4]
+[36md3bb3d91d2e1_search-final |[0m 	at org.elasticsearch.client.RestClient$1.completed(RestClient.java:399) ~[elasticsearch-rest-client-8.10.4.jar!/:8.10.4]
+[36md3bb3d91d2e1_search-final |[0m 	at org.elasticsearch.client.RestClient$1.completed(RestClient.java:393) ~[elasticsearch-rest-client-8.10.4.jar!/:8.10.4]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.concurrent.BasicFuture.completed(BasicFuture.java:122) ~[httpcore-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.responseCompleted(DefaultClientExchangeHandlerImpl.java:182) ~[httpasyncclient-4.1.5.jar!/:4.1.5]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.nio.protocol.HttpAsyncRequestExecutor.processResponse(HttpAsyncRequestExecutor.java:448) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.nio.protocol.HttpAsyncRequestExecutor.inputReady(HttpAsyncRequestExecutor.java:338) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.DefaultNHttpClientConnection.consumeInput(DefaultNHttpClientConnection.java:265) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:87) ~[httpasyncclient-4.1.5.jar!/:4.1.5]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:40) ~[httpasyncclient-4.1.5.jar!/:4.1.5]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:114) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.reactor.BaseIOReactor.readable(BaseIOReactor.java:162) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:337) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:315) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:276) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591) ~[httpcore-nio-4.4.16.jar!/:4.4.16]
+[36md3bb3d91d2e1_search-final |[0m 	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+[36md3bb3d91d2e1_search-final |[0m 
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:29:45.622Z  INFO 1 --- [search-service] [or-http-epoll-2] c.yowyob.search.service.SearchService    : Searching by proximity: query=restaurant, city=null, radiusKm=1.0
+[36md3bb3d91d2e1_search-final |[0m 2026-02-10T12:29:45.654Z  INFO 1 --- [search-service] [or-http-epoll-2] c.yowyob.search.service.SearchService    : Searching by proximity: query=restaurants prÃ¨s de chez moi, city=null, radiusKm=10.0

@@ -1,0 +1,6 @@
+fastapi>=0.104.1
+uvicorn>=0.23.2
+pydantic>=2.4.2
+# Installation torch CPU only (évite de télécharger les 3 Go de CUDA/Nvidia GPU)
+torch --index-url https://download.pytorch.org/whl/cpu
+sentence-transformers>=2.2.2
